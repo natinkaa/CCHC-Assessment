@@ -1,9 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "debugging-q4"
 version = "0.1.0"
 description = "CCHC Assessment Debugging Q4"
-authors = [{ name = "", email = "" }]
+authors = [{ name = "Natalia Weglicka", email = "nweglicka@proton.me" }]
 readme = "README.md"
-requires-python = "<=3.11"
+requires-python = "<=3.11.14"
 dependencies = [
+    "dash",
+    "numpy==1.23.5",
+    "pandas==1.5.3",
+    "pandas-stubs==1.5.3.230203",
 ]
+
+[tool.setuptools]
+py-modules = ["main"]
